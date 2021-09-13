@@ -1,0 +1,58 @@
+doctype HTML
+html 
+    head
+        title WeDev
+        style
+            include ../static/style.css
+    body
+        div.container 
+            nav#navbar 
+                h2#brand WeDev.com 
+                ul.nav 
+                    li.nav-items #[a(href="/") Home]
+                    li.nav-items #[a(href="/") About]
+                    li.nav-items #[a(href="/") Skills]
+                    li.nav-items #[a(href="/") Contact]
+        section.container1
+            h1 World of Web  
+        section.container2
+            <p>This is the world of web every possible Business todays runs a small scalable website about their Business ... Your Business too have it..</p>
+
+        section.container3
+            <h1>Right?You have it.. Don't You?</h1>
+            button(type="submit") 
+        section.container4
+            <h2>Don't Worry that's what we do:</h2>
+            <p>WeDev creates Website for businesses in order to make the business "GrowMore"</p>
+            <button><a href="#forms">Own Your First Website </a></button>
+
+        section.container5
+            <h2>So Let's Fix a Call with WeDev Experts: </h2>
+            section#forms      
+                form(action="/form-submit", method="post", class="myform")
+                div 
+                    <label>Your Name: </label>
+                    <input type="text" placeholder="ex: Om">
+                div 
+                    <label>Company Name: </label>
+                    //- label(for="Company Name:")
+                    <input type="text"  placeholder="ex: open247">
+                div 
+                    <label>Business Type </label>
+                    <input type="text"  placeholder="ex: e-Commerce">
+                div 
+
+                    <label>Fix time for a call: </label>
+                    <input type="datetime" placeholder="time ex: 9pm"></option>
+                div 
+                    <label>Contact Number: </label>
+                    <input type="number" placeholder="ex: 1100115133">
+                div 
+                    <button>Let's Fix</button>
+            section2 
+                <h2>WeDev</h2>
+                <p>Times Square, Nagpur, Maharashtra, India, 440025</p> 
+            section5 
+                <h3>WeDev&copy; 2021 Om Duragkar</h3> 
+        script
+            include ../static/script.js
